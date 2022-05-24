@@ -15,7 +15,14 @@
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Idealist Sans Light SC';
+    src: url('IdealistSansLightSC.woff2') format('woff2'),
+        url('IdealistSansLightSC.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 @font-face {
     font-family: 'DOCKER TWO';
     src: url('DOCKERTWO.woff2') format('woff2'),

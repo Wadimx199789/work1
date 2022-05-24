@@ -1,1 +1,153 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base-font);
+  font-size: var(--base-size);
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list-link {
+  font-size: 32px;
+  color: #0b0e0e;
+  font-weight: 250;
+  margin-left: 100px;
+}
+
+.container {
+  max-width: 1610px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.design {
+  padding-top: 120px;
+  padding-bottom: 84px;
+}
+
+.design__container {
+  max-width: 1690px;
+}
+
+.design__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.design__title {
+  font-weight: 700;
+  font-size: 360px;
+  text-transform: uppercase;
+}
+
+.design__circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background: #0b0e0e;
+}
+
+.design__dot {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--purple-color);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design .design__circle {
+  width: 70px;
+  height: 70px;
+}
+
+.design__bottom-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+
+.design__bottom-text {
+  max-width: 620px;
+  font-size: 28px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Idealist Sans Light SC";
+}
+
+.category__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category__content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.category__title {
+  font-size: 100px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin-bottom: 60px;
+}
+
+.category__image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category__text {
+  font-size: 32px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Idealist Sans Light SC";
+  max-width: 575px;
+}
+/*# sourceMappingURL=style.css.map */

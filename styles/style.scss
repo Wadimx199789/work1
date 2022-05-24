@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--base-font);
+    font-size: var(--base-size);
+}
+
+.menu {
+    &__list {
+        display: flex;
+
+        &-link {
+            font-size: 32px;
+            color: #0b0e0e;
+            font-weight: 250;
+            margin-left: 100px;
+        }
+
+    }
+
+}
+
+.container {
+    max-width: 1610px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 60px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.design {
+    padding-top: 120px;
+    padding-bottom: 84px;
+
+    &__container {
+        max-width: 1690px;
+    }
+
+    &__top {
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 360px;
+        text-transform: uppercase;
+    }
+    &__circle{
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        background:#0b0e0e;
+    }
+    &__dot {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: var(--purple-color);
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .design__circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__bottom {
+        &-title {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 36px;
+        }
+
+        &-text {
+            max-width: 620px;
+            font-size: 28px;
+            color: #000000;
+            font-weight: 300;
+            font-family: "Idealist Sans Light SC";
+        }
+
+    }
+}
+
+.category {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 100px;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-bottom: 60px;
+    }
+    &__image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        font-size: 32px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Idealist Sans Light SC";
+        max-width: 575px;
+    }
+}

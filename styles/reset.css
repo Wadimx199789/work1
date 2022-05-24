@@ -24,6 +24,9 @@ time, mark, audio, video {
 :focus {
     outline: 0;
 }
+a{
+    text-decoration: none;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
