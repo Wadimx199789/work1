@@ -22,9 +22,9 @@
                     </a>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">о нас</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">услуги</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">контакты </a></li>
+                            <li class="menu__list-item"><a href="#about" class="menu__list-link">о нас</a></li>
+                            <li class="menu__list-item"><a href="#services" class="menu__list-link">услуги</a></li>
+                            <li class="menu__list-item"><a href="#contacts" class="menu__list-link">контакты </a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +41,7 @@
                             <div class="design__circle"></div>
                         </div>
                     </div>
-                    <div class="design__bottom container">
+                    <div class="design__bottom container" id="about">
                         <h2 class="design__bottom-title">
                             ЛАБАРАТОРИЯ ДИЗАЙНА
                         </h2>
@@ -72,7 +72,7 @@
             </div>
         </section>
     </div>
-    <section class="advertisement">
+    <section class="advertisement" id="services">
         <div class="container">
             <div class="advertisement__text">
                 <span class="advertisement__word">брендинг. </span><span class="advertisement__word">ребрендинг.</span>
@@ -104,14 +104,26 @@
                     КОЛБЫ РЕШЕНИЙ
                 </div>
                 <div class="flasks__box">
-                    <div class="flasks__flask flasks__flask--light">
+                    <div class="flasks__flask-content">
+                        <span class="flasks__flask-price">
+                            от 6499 USD
+                        </span>
+                        <h2 class="flasks__flask-name">КОЛБА  <span class="flasks__flask-name--highlight">business</span></h2>
+                        <div class="flasks__flask-box">
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="flasks__flask flasks__flask--light">
                         <img src="./assets/1.svg" alt="one">
+                        <h3 class="flasks__flask-title">light</h3>
                     </div>
                     <div class="flasks__flask flasks__flask--creative">
-
-                    </div>
+                        <img src="./assets/2.svg" alt="">
+                        <h3 class="flasks__flask-title">creative</h3>
+                    </div> -->
                     <div class="flasks__flask flasks__flask--business">
-
+                        <img src="./assets/33.svg" alt="">
+                        <h3 class="flasks__flask-title">business</h3>
                     </div>
                 </div>
             </div>
@@ -166,7 +178,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./scripts/scripts.js"></script>
 </body>
 
 </html>

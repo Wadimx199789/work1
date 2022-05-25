@@ -25,6 +25,24 @@ body {
   color: #0b0e0e;
   font-weight: 250;
   margin-left: 100px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.menu__list-link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--purple-color);
+  content: "";
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.menu__list-link:hover:after, .menu__list-link:focus:after {
+  width: 100%;
 }
 
 .container {
@@ -172,6 +190,20 @@ body {
   text-align: center;
 }
 
+.advertisement__word {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.advertisement__word.active {
+  color: #ffffff;
+}
+
+.advertisement__word:hover {
+  color: #ffffff;
+}
+
 .flasks {
   padding-top: 168px;
   padding-bottom: 230px;
@@ -208,6 +240,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.flasks__flask-content {
+  position: absolute;
+  left: -1000px;
+}
+
+.flasks__flask-price {
+  font-size: 60px;
+  color: #000000;
+  font-weight: 275;
+  font-family: "Montserrat";
+}
+
+.flasks__flask-name {
+  font-size: 100px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.flasks__flask-name--highlight {
+  color: var(--purple-color);
 }
 
 .flasks__flask-title {
