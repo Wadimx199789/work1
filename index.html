@@ -13,23 +13,23 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="logo">
-                    <img src="./assets/logo.png" alt="logo">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">о нас</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">услуги</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">контакты </a></li>
-                    </ul>
-                </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="logo">
+                        <img src="./assets/logo.png" alt="logo">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__list-link">о нас</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__list-link">услуги</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__list-link">контакты </a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
+        </header>
         <section class="design">
             <div class="container design__container">
                 <div class="design__inner">
@@ -41,9 +41,9 @@
                             <div class="design__circle"></div>
                         </div>
                     </div>
-                    <div class="design__bottom">
+                    <div class="design__bottom container">
                         <h2 class="design__bottom-title">
-                            ЛАБАРАТОРИЯ ДИЗАЙНА 
+                            ЛАБАРАТОРИЯ ДИЗАЙНА
                         </h2>
                         <p class="design__bottom-text">
                             Мы профессиональные профессианалы.
@@ -62,19 +62,108 @@
                     </div>
                     <div class="category__content">
                         <h2 class="category__title">
-                            БРЕНДИНГ 
+                            БРЕНДИНГ
                         </h2>
                         <p class="category__text">
-                            Создание всего что касается визльного состовляющего вашего бренда. от логотипа  до сайта.    
+                            Создание всего что касается визльного состовляющего вашего бренда. от логотипа до сайта.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+    </div>
+    <section class="advertisement">
+        <div class="container">
+            <div class="advertisement__text">
+                <span class="advertisement__word">брендинг. </span><span class="advertisement__word">ребрендинг.</span>
+                <span class="advertisement__word">influecer
+                    marketing.</span> &ensp;<span class=" advertisement__word">транзитная
+                    реклама.</span><br>&ensp;&emsp;<a class="advertisement__word">наружная реклама.</a>&ensp;<span
+                    class="advertisement__word">внутренняя реклама.</span>
+                &ensp;<span class="advertisement__word">логотип.</span> &ensp;<span
+                    class="advertisement__word">упаковка.</span><br>&ensp; <span
+                    class=" advertisement__word">брендбук.</span>&ensp; <span
+                    class="advertisement__word">айдентика.</span>&ensp; <span
+                    class="advertisement__word">визитки.</span>&ensp; <span
+                    class="advertisement__word">брашуры.</span>&ensp; <span
+                    class="advertisement__word">каталоги.</span></a> <span class="advertisement__word">нэйминг.</span>
+                <span class="advertisement__word">слоган.</span>&ensp;<span class="advertisement__word">рекламный
+                    текст.</span>
+                <span class=" advertisement__word">приложения ios.</span> &ensp;<span
+                    class=" advertisement__word">приложения android.</span><br><span
+                    class=" advertisement__word">лэндинг.</span> <span class="advertisement__word">сайт.</span>
+                <span class="advertisement__word">разработка приложений.</span> <span
+                    class="advertisement__word">техническая поддержка</span>
+            </div>
+        </div>
+    </section>
+    <section class="flasks">
+        <div class="container">
+            <div class="flasks__inner">
+                <div class="flasks__title">
+                    КОЛБЫ РЕШЕНИЙ
+                </div>
+                <div class="flasks__box">
+                    <div class="flasks__flask flasks__flask--light">
+                        <img src="./assets/1.svg" alt="one">
+                    </div>
+                    <div class="flasks__flask flasks__flask--creative">
+
+                    </div>
+                    <div class="flasks__flask flasks__flask--business">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <p class="contacts__text">
+                    <span class="contacts__text--light"><b
+                            class="contacts__text--bold contacts__text--purple">О</b>ставьте</span>
+                    <span class="contacts__text--extralight">контакт.</span>
+                    <span class="contacts__text--light">Намекните</span>
+                    <span class="contacts__text--extralight">на&nbsp;желания.</span>
+                    <span class="contacts__text--light">П<b
+                            class="contacts__text--bold contacts__text--green">о</b>лучите</span>
+                    <span class="contacts__text--extralight">результат.</span>
+                </p>
+                <form action="#" class="contacts-form">
+                    <input type="text" class="contacts-form__name" id="name" placeholder="фио" required>
+                    <input type="phone" class="contacts-form__phone" placeholder="Телефон" required>
+                    <textarea id="message" class="contacts-form__message" rows="4" cols="20"
+                        placeholder="Оставьте Ваши пожелания" required></textarea>
+                    <input class="contacts-form__button" value="Отправить" type="submit"></input>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
-
+            <div class="footer__inner">
+                <a href="#" class="footer__logo">
+                    <img src="./assets/Без имени-3.png" alt="">
+                </a>
+                <div class="footer__contacts">
+                    <h3 class="footer__contacts-title">КОНТАКТЫ</h3>
+                    <div class="footer__contacts-box">
+                        <a href="tel:+375339903007" class="footer__contacts-phone">+375 33 990 3007</a>
+                        <a href="tel:+375339905008" class="footer__contacts-phone">+375 33 990 5008</a>
+                        <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw5nTUAPQFtpfXVyeHRiZA==/?from=tabbar&ll=27.597458%2C53.939810&source=serp_navig&z=16"
+                            class="footer__contacts-adress">г. Минск ул. Мележа 5/2 оф. 1801</a>
+                    </div>
+                </div>
+                <div class="footer__organization">
+                    ООО "ЛАБОРАТОРИЯ ДИЗАЙНА"
+                    УНП: 193626599
+                    № BY79PJCB30120731401000000933
+                    BYN в ПРИОРБАНК<br>
+                    БИК: PJCBBY2X
+                </div>
+            </div>
         </div>
     </footer>
 
