@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/fonts/stylesheet.css">
     <link rel="stylesheet" href="./styles/variables.css">
@@ -14,10 +15,13 @@
 
 <body>
     <div class="wrapper">
+        <a href="#contacts" class="pulse-btn">
+            K
+        </a>
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="logo">
+                    <a href="#" class="header__logo">
                         <img src="./assets/logo.png" alt="logo">
                     </a>
                     <nav class="menu">
@@ -27,6 +31,9 @@
                             <li class="menu__list-item"><a href="#contacts" class="menu__list-link">контакты </a></li>
                         </ul>
                     </nav>
+                    <div class="burger">
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <div class="design">
@@ -152,7 +159,7 @@
                 </div>
                 <div class="category__inner category__service" data-name="identity">
                     <div class="category__image">
-                        <img src="./assets/categories/technical support.png">
+                        <img src="./assets/categories/identity.png">
                     </div>
                     <div class="category__content">
                         <h2 class="category__title">
@@ -173,8 +180,8 @@
                             Буклеты
                         </h2>
                         <p class="category__text">
-                            Фирменная атрибутика расскажет о вас цветом, формой, образом и в конечном итоге поможет
-                            запомниться.
+                            важная часть маркетингового инструментария, которая должна привлекать внимание с первого
+                            взгляда. В это нам точно нет равных.
                         </p>
                     </div>
                 </div>
@@ -193,6 +200,20 @@
                         </p>
                     </div>
                 </div>
+                <div class="category__inner category__service" data-name="brandbook">
+                    <div class="category__image">
+                        <img src="./assets/categories/brandbook.PNG">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            Брендбук
+                        </h2>
+                        <p class="category__text">
+                            Это самый важный свод правил о вашем визуале. Главное, чтобы он был не только грамотно
+                            составлен, но и прост в использовании.
+                        </p>
+                    </div>
+                </div>
                 <div class="category__inner category__service" data-name="business cards">
                     <div class="category__image">
                         <img src="./assets/categories/businessCards.png">
@@ -207,25 +228,92 @@
                         </p>
                     </div>
                 </div>
+                <div class="category__inner category__service" data-name="slogan">
+                    <div class="category__image">
+                        <img src="./assets/categories/slogan.png">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            СЛОГАН
+                        </h2>
+                        <p class="category__text">
+                            Мы знаем свое дело. Пусть люди узнают о вашем за одну яркую, емкую фразу.
+                        </p>
+                    </div>
+                </div>
+                <div class="category__inner category__service" data-name="outdoor advertising">
+                    <div class="category__image">
+                        <img src="./assets/categories/outdoor advertising.png">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            НАРУЖНАЯ
+                            РЕКЛАМА
+                        </h2>
+                        <p class="category__text">
+                            Мы поможем ярко заявить о себе
+                            в любом месте.
+                        </p>
+                    </div>
+                </div>
+                <div class="category__inner category__service" data-name="catalogs">
+                    <div class="category__image">
+                        <img src="./assets/categories/catalogs.png">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            КАТАЛОГИ
+                        </h2>
+                        <p class="category__text">
+                            По сути каталог – это ваш магазин, только в компактном варианте.
+                        </p>
+                    </div>
+                </div>
+                <div class="category__inner category__service" data-name="naming">
+                    <div class="category__image">
+                        <img src="./assets/categories/naming.png">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            Нэйминг
+                        </h2>
+                        <p class="category__text">
+                            Мы поможем Вам заявить о себе ярким названием.
+                        </p>
+                    </div>
+                </div>
+                <div class="category__inner category__service" data-name="advertising text">
+                    <div class="category__image">
+                        <img src="./assets/categories/advertisingText.png">
+                    </div>
+                    <div class="category__content">
+                        <h2 class="category__title">
+                            РЕКЛАМНЫЙ
+                            ТЕКСТ
+                        </h2>
+                        <p class="category__text">
+                            Хороший рекламный текст сродни искусству – его задача собрать вокруг себя толпу.
+                        </p>
+                    </div>
+                </div>
         </section>
         <section class="advertisement" id="services">
             <div class="container">
                 <div class="advertisement__text">
-                    <span class="advertisement__word" data-name="branding">брендинг. </span><span
-                        class="advertisement__word" data-name="rebranding">ребрендинг.</span>
-                    <span class=" advertisement__word" data-name="transit advertising">транзитная
-                        реклама.</span><br>&ensp;&emsp;<span class="advertisement__word">наружная реклама.</span>
-                    &ensp;<span class="advertisement__word" data-name="logo">логотип.</span> &ensp;<span
-                        class="advertisement__word" data-name="packaging">упаковка.</span><br>&ensp; <span
-                        class=" advertisement__word" data-name="brandbook">брендбук.</span>&ensp; <span
-                        class="advertisement__word" data-name="identity">айдентика.</span>&ensp; <span
-                        class="advertisement__word" data-name="business cards">визитки.</span>&ensp; <span
-                        class="advertisement__word" data-name="booklets">буклеты</span>&ensp; <span
-                        class="advertisement__word" data-name="catalogs">каталоги.</span><span
-                        class="advertisement__word" data-name="naming">нэйминг.</span>
-                    <span class="advertisement__word" data-name="slogan">слоган</span>&ensp;<span
-                        class="advertisement__word" data-name="advertising text">рекламный
-                        текст</span><span class=" advertisement__word" data-name="landing">лэндинг</span> <span
+                    <span class="advertisement__word" data-name="branding">брендинг </span><span
+                        class="advertisement__word" data-name="rebranding">ребрендинг</span>
+                    <span class="advertisement__word" data-name="outdoor advertising">наружная реклама </span><span
+                        class="advertisement__word" data-name="logo">логотип</span>
+                    <span class="advertisement__word" data-name="packaging">упаковка </span> <span
+                        class=" advertisement__word" data-name="brandbook">брендбук </span> <span
+                        class="advertisement__word" data-name="identity">айдентика </span><span
+                        class="advertisement__word" data-name="business cards">визитки </span> <span
+                        class="advertisement__word" data-name="booklets">буклеты </span><span
+                        class="advertisement__word" data-name="catalogs">каталоги </span><span
+                        class="advertisement__word" data-name="naming">нэйминг </span>
+                    <span class="advertisement__word" data-name="slogan">слоган </span><span class="advertisement__word"
+                        data-name="advertising text">рекламный
+                        текст </span><span class=" advertisement__word" data-name="landing">лэндинг</span> <span
                         class="advertisement__word" data-name="website development">разработка сайта</span>
                     <span class="advertisement__word" data-name="technical support">техническая поддержка</span>
                 </div>
@@ -240,7 +328,7 @@
                     <div class="flasks__box">
                         <div class="flasks__flask-content flasks__flask-content--business" data-flask="business">
                             <span class="flasks__flask-price">
-                                от 6499 USD
+                                от 6499 BYN
                             </span>
                             <h2 class="flasks__flask-name">КОЛБА <span
                                     class="flasks__flask-name--purple">business</span></h2>
@@ -265,7 +353,7 @@
                         </div>
                         <div class="flasks__flask-content flasks__flask-content--light" data-flask="light">
                             <span class="flasks__flask-price">
-                                от 1999 USD
+                                от 1999 BYN
                             </span>
                             <h2 class="flasks__flask-name">КОЛБА <span class="flasks__flask-name--green">light</span>
                             </h2>
@@ -280,7 +368,7 @@
                         <div class="flasks__flask-content flasks__flask-content--creative flasks__flask-content--creative-first"
                             data-flask="creative">
                             <span class="flasks__flask-price">
-                                от 3999 USD
+                                от 3999 BYN
                             </span>
                             <h2 class="flasks__flask-name">КОЛБА</h2>
                             <ul class="flasks__flask-list">
@@ -347,10 +435,10 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="#" class="footer__logo">
+                    <a href="#" class="footer__logo footer__item">
                         <img src="./assets/Без имени-3.png" alt="">
                     </a>
-                    <div class="footer__contacts">
+                    <div class="footer__contacts footer__item">
                         <h3 class="footer__contacts-title">КОНТАКТЫ</h3>
                         <div class="footer__contacts-box">
                             <a href="tel:+375339903007" class="footer__contacts-phone">+375 33 990 3007</a>
@@ -359,7 +447,7 @@
                                 class="footer__contacts-adress">г. Минск ул. Мележа 5/2 оф. 1801</a>
                         </div>
                     </div>
-                    <div class="footer__organization">
+                    <div class="footer__organization footer__item">
                         ООО "ЛАБОРАТОРИЯ ДИЗАЙНА"
                         УНП: 193626599
                         № BY79PJCB30120731401000000933
@@ -374,52 +462,3 @@
 </body>
 
 </html>
-
-
-
-
-<!-- <div class="resources__banner banner row">
-    <div class="banner__item-col ">
-        <div class="banner__item">
-            <a href="/ru/go/16/" class="banner__link" title="Официальный сайт Президента Республики Беларусь"
-                target="_blank">
-                <img class="banner__img" src="/images/new/face/gosorg/gerb.png"
-                    alt="Официальный сайт Президента Республики Беларусь">
-                <p class="banner__text">Официальный сайт<br> Президента Республики Беларусь</p>
-                <span class="bantxt">Официальный сайт<br> Президента Республики Беларусь</span>
-            </a>
-        </div>
-    </div>
-    <div class="banner__item-col ">
-        <div class="banner__item">
-            <a href="/ru/go/2/" class="banner__link" title="Государственные органы и организации Республики Беларусь"
-                target="_blank">
-                <img class="banner__img" src="/images/new/face/gosorg/gerb.png"
-                    alt="Государственные органы и организации Республики Беларусь">
-                <p class="banner__text">Государственные органы и организации<br> Республики Беларусь</p>
-                <span class="bantxt">Государственные органы и организации<br> Республики Беларусь</span>
-            </a>
-        </div>
-    </div>
-    <div class="banner__item-col ">
-        <div class="banner__item">
-            <a href="/ru/go/19/" class="banner__link" title="Национальный правовой интернет-портал Республики Беларусь"
-                target="_blank">
-                <img class="banner__img" src="/images/new/face/gosorg/gerb.png"
-                    alt="Национальный правовой интернет-портал Республики Беларусь">
-                <p class="banner__text">Национальный правовой интернет-портал Республики Беларусь</p>
-                <span class="bantxt">Национальный правовой интернет-портал Республики Беларусь</span>
-            </a>
-        </div>
-    </div>
-    <div class="banner__item-col sov_minisitr">
-        <div class="banner__item">
-            <a href="/ru/go/27/" class="banner__link" title="Совет Министров Республики Беларусь" target="_blank">
-                <img class="banner__img" src="/images/new/face/gosorg/gerb.png"
-                    alt="Совет Министров Республики Беларусь">
-                <p class="banner__text">Совет Министров<br> Республики Беларусь</p>
-                <span class="bantxt">Совет Министров<br> Республики Беларусь</span>
-            </a>
-        </div>
-    </div>
-</div> -->
