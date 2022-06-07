@@ -1,11 +1,11 @@
 :root {
   --base-font: 'Montserrat', sans-serif;
-  --base-text-color:#000000;
-  --base-background-color:#ffffff;
-  --light-green-color:#cbff00;
-  --purple-color:#a50eff;
-  --light-purple-color:#b974ff;
-  --base-text-size:28px;
+  --base-text-color: #000000;
+  --base-background-color: #ffffff;
+  --light-green-color: #cbff00;
+  --purple-color: #a50eff;
+  --light-purple-color: #b974ff;
+  --base-text-size: 28px;
 }
 
 * {
@@ -24,6 +24,8 @@
       -ms-user-select: none;
           user-select: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 :focus,
@@ -190,7 +192,8 @@ textarea {
   outline: none !important;
 }
 
-::-moz-focus-outer, ::-moz-focus-inner {
+::-moz-focus-outer,
+::-moz-focus-inner {
   border: 0px !important;
   padding: 0;
 }
@@ -206,7 +209,10 @@ button:focus {
           box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
 }
 
-input, textarea, input:active, textarea:active {
+input,
+textarea,
+input:active,
+textarea:active {
   outline: none;
 }
 
@@ -1193,6 +1199,11 @@ body {
   font-family: "Montserrat";
 }
 
+.flasks__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .flasks__item {
   font-size: 40px;
   color: #000000;
@@ -1683,23 +1694,33 @@ body {
 }
 
 @media screen and (max-width: 1362px) {
-  .contacts-form__name, .contacts-form__phone, .contacts-form__message {
+  .contacts-form__name,
+  .contacts-form__phone,
+  .contacts-form__message {
     font-size: 28px;
     line-height: 60px;
   }
-  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+  .contacts-form__name::-webkit-input-placeholder,
+  .contacts-form__phone::-webkit-input-placeholder,
+  .contacts-form__message::-webkit-input-placeholder {
     font-size: 28px;
     line-height: 40px;
   }
-  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+  .contacts-form__name:-ms-input-placeholder,
+  .contacts-form__phone:-ms-input-placeholder,
+  .contacts-form__message:-ms-input-placeholder {
     font-size: 28px;
     line-height: 40px;
   }
-  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+  .contacts-form__name::-ms-input-placeholder,
+  .contacts-form__phone::-ms-input-placeholder,
+  .contacts-form__message::-ms-input-placeholder {
     font-size: 28px;
     line-height: 40px;
   }
-  .contacts-form__name::placeholder, .contacts-form__phone::placeholder, .contacts-form__message::placeholder {
+  .contacts-form__name::placeholder,
+  .contacts-form__phone::placeholder,
+  .contacts-form__message::placeholder {
     font-size: 28px;
     line-height: 40px;
   }
