@@ -1,5 +1,4 @@
 
-
 :root{
     --base-font: 'Montserrat', sans-serif;
     --base-text-color:#000000;
@@ -225,7 +224,7 @@ body {
 .wrapper {
     position: relative;
     overflow: hidden;
-    max-width: 1920px;
+    max-width: 2048px;
     margin: 0 auto;
 
 
@@ -350,7 +349,7 @@ body {
 
 }
 
-@media screen and (max-width:1740px) {
+@media screen and (max-width:1960px) {
     .pulse-btn {
         width: 60px;
         height: 60px;
@@ -386,9 +385,9 @@ body {
         object-fit: cover;
     }
 }
-@media screen and (max-width:1760px){
+@media screen and (max-width:1960px){
     .header__logo img {
-        width: 90%;
+        width: 80%;
         height: auto;
         -o-object-fit: cover;
         object-fit: cover;
@@ -430,7 +429,7 @@ body {
 
 }
 
-@media screen and (max-width:1760px) {
+@media screen and (max-width:1960px) {
     .menu__list-link {
         font-size: 24px;
         font-weight: 400;
@@ -507,7 +506,7 @@ body {
 // -----------------------------------------------------container---------------------------------------------------------//
 .container {
     max-width: 1610px;
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -585,7 +584,7 @@ body {
     }
 }
 
-@media screen and (max-width:1760px) {
+@media screen and (max-width:1960px) {
     .design{
         padding-top: 86px;
     }
@@ -604,7 +603,7 @@ body {
     }
 }
 
-@media screen and (max-width:1760px) {
+@media screen and (max-width:1960px) {
     .header {
         background: url(../assets/background/rectangle2.svg) no-repeat 100% 61%/41%, url(../assets/background/circle3cop.svg) no-repeat 33% 0%/23%;
         padding-top: 10px;
@@ -843,7 +842,7 @@ body {
         }
     }
 
-    @media screen and (max-width:1760px) {
+    @media screen and (max-width:1960px) {
         .category {
             padding-bottom: 40px;
             background: url(../assets/background/circle4.png) no-repeat 96% 98%/5%, url(../assets/background/circle2cop.png) no-repeat -2% 153%/13%;
@@ -998,7 +997,7 @@ body {
         }
     }
 
-    @media screen and (max-width:1760px) {
+    @media screen and (max-width:1960px) {
         .advertisement__text {
             font-size: 25px;
         }
@@ -1203,7 +1202,7 @@ body {
     .flasks__flask-name--light-purple{
         display: block;
     }
-    @media screen and (max-width:1760px) {
+    @media screen and (max-width:1960px) {
         .flasks__flask-content--business {
             padding-top: 10px;
         }
@@ -1594,7 +1593,6 @@ body {
             }
 
             text-align: left;
-            padding-left:52px;
             font-size: 100px;
             line-height: 114px;
             color: #ffffff;
@@ -1607,7 +1605,7 @@ body {
 
     }
 
-    @media screen and (max-width:1760px) {
+    @media screen and (max-width:1960px) {
         .contacts {
             padding-top: 120px;
             padding-bottom: 60px;
@@ -1620,8 +1618,7 @@ body {
         .contacts__text {
             width: 50%;
             text-align: left;
-            padding-left: 52px;
-            font-size: 48px;
+            font-size: 54px;
             line-height: 100px;
             color: #ffffff;
             font-weight: 400;
@@ -1859,9 +1856,9 @@ body {
         }
     }
 
-    @media screen and (max-width:1760px) {
+    @media screen and (max-width:1960px) {
         .footer__logo img {
-            width: 90%;
+            width: 80%;
         }
         .footer__contacts-title {
             font-size: 22px;
