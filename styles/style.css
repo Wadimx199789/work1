@@ -346,7 +346,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1740px) {
   .pulse-btn {
     width: 60px;
     height: 60px;
@@ -382,6 +382,15 @@ body {
      object-fit: cover;
 }
 
+@media screen and (max-width: 1760px) {
+  .header__logo img {
+    width: 90%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,16 +422,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 1620px) {
-  .menu__list-link {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 1560px) {
-  .menu {
-    margin-right: 40px;
-  }
+@media screen and (max-width: 1760px) {
   .menu__list-link {
     font-size: 24px;
     font-weight: 400;
@@ -576,22 +576,26 @@ body {
   font-family: "Idealist Sans Light SC";
 }
 
-@media screen and (max-width: 1620px) {
+@media screen and (max-width: 1760px) {
+  .design {
+    padding-top: 86px;
+  }
   .design__title {
-    font-size: 320px;
+    font-size: 150px;
   }
   .design__dot {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
   .design .design__circle {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1760px) {
   .header {
+    background: url(../assets/background/rectangle2.svg) no-repeat 100% 61%/41%, url(../assets/background/circle3cop.svg) no-repeat 33% 0%/23%;
     padding-top: 10px;
   }
   .design__top {
@@ -600,18 +604,18 @@ body {
             justify-content: center;
     margin-bottom: 80px;
   }
-  .design__title {
-    font-size: 196px;
-  }
-  .design__dot {
-    width: 90px;
-    height: 90px;
-  }
   .design__bottom {
     padding-left: 120px;
   }
   .design__bottom-title {
     font-size: 32px;
+  }
+  .design__bottom-text {
+    font-size: 22px;
+  }
+  .design__bottom-title {
+    font-size: 28px;
+    margin-bottom: 20px;
   }
   .design__bottom-text {
     font-size: 22px;
@@ -814,10 +818,10 @@ body {
   max-width: 575px;
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1760px) {
   .category {
-    padding-bottom: 80px;
-    background: url(../assets/background/circle4.png) no-repeat 96% 98%/6%, url(../assets/background/circle2cop.png) no-repeat -2% 146%/18%;
+    padding-bottom: 40px;
+    background: url(../assets/background/circle4.png) no-repeat 96% 98%/5%, url(../assets/background/circle2cop.png) no-repeat -2% 153%/13%;
   }
   .category__inner {
     -webkit-column-gap: 60px;
@@ -835,13 +839,13 @@ body {
             justify-content: center;
   }
   .category__title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     font-family: "Montserrat";
     margin-bottom: 30px;
   }
   .category__text {
-    font-size: 22px;
+    font-size: 20px;
     color: #000000;
     font-weight: 300;
     font-family: "Idealist Sans Light SC";
@@ -849,14 +853,17 @@ body {
   }
   .category__content {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 68%;
+    -ms-flex: 0 0 68%;
+        flex: 0 0 68%;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
   }
   .category__service.active {
     top: 26px;
+  }
+  .category__image img {
+    width: 90%;
   }
 }
 
@@ -964,9 +971,9 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1760px) {
   .advertisement__text {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -1197,7 +1204,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1760px) {
   .flasks__flask-content--business {
     padding-top: 10px;
   }
@@ -1206,7 +1213,7 @@ body {
     padding-bottom: 120px;
   }
   .flasks__title {
-    font-size: 64px;
+    font-size: 56px;
   }
   .flasks__flask img {
     width: 70%;
@@ -1411,7 +1418,7 @@ body {
 
 @media screen and (max-width: 560px) {
   .flasks__title {
-    font-size: 36px;
+    font-size: 32px;
   }
   .flasks__flask-price {
     font-size: 18px;
@@ -1473,6 +1480,9 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .flasks__flask-title {
+    font-size: 28px;
+  }
   .flasks__flask-content--creative-second {
     left: 44%;
   }
@@ -1609,7 +1619,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1760px) {
   .contacts {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -1630,10 +1640,10 @@ body {
   .contacts-form__button {
     max-width: 411px;
     margin: 0 auto;
-    font-size: 36px;
+    font-size: 28px;
     color: #ffffff;
     font-weight: 300;
-    padding: 20px 55px;
+    padding: 16px 46px;
     font-family: "Montserrat";
     background-color: var(--light-green-color);
     color: #000000;
@@ -1674,40 +1684,68 @@ body {
   }
 }
 
-@media screen and (max-width: 1041px) {
+@media screen and (max-width: 1362px) {
+  .contacts-form__name, .contacts-form__phone, .contacts-form__message {
+    font-size: 28px;
+    line-height: 60px;
+  }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name::placeholder, .contacts-form__phone::placeholder, .contacts-form__message::placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
   .contacts__text {
-    font-size: 36px;
-    line-height: 69px;
+    padding-left: 40px;
+    font-size: 42px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  .contacts__text {
+    font-size: 35px;
+    line-height: 63px;
   }
   .contacts-form__name,
   .contacts-form__phone,
   .contacts-form__message {
-    font-size: 28px;
-    line-height: 70px;
+    font-size: 26px;
+    line-height: 50px;
   }
   .contacts-form__name::-webkit-input-placeholder,
   .contacts-form__phone::-webkit-input-placeholder,
   .contacts-form__message::-webkit-input-placeholder {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
   }
   .contacts-form__name:-ms-input-placeholder,
   .contacts-form__phone:-ms-input-placeholder,
   .contacts-form__message:-ms-input-placeholder {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
   }
   .contacts-form__name::-ms-input-placeholder,
   .contacts-form__phone::-ms-input-placeholder,
   .contacts-form__message::-ms-input-placeholder {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
   }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
@@ -1729,7 +1767,7 @@ body {
             column-gap: 40px;
   }
   .contacts__text {
-    font-size: 38px;
+    font-size: 42px;
     line-height: 50px;
     margin-bottom: 40px;
     -webkit-box-flex: 0;
@@ -1932,16 +1970,19 @@ body {
   font-weight: 275;
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1760px) {
+  .footer__logo img {
+    width: 90%;
+  }
   .footer__contacts-title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 23px;
   }
   .footer__contacts-box a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .footer__organization {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
