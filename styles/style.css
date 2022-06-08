@@ -874,7 +874,7 @@ body {
     max-width: 575px;
   }
   .category__service.active {
-    top: 26px;
+    top: 90px;
   }
   .category__image div {
     height: 260px;
@@ -898,6 +898,12 @@ body {
   }
   .category__text {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .category {
+    background: url(../assets/background/circle4.png) no-repeat 96% 98%/5%, url(../assets/background/circle2cop.png) no-repeat -2% 178%/20%;
   }
 }
 
