@@ -6,19 +6,19 @@ window.onload = function () {
     const menu = document.querySelector('.menu');
 
 
-    burgerButton.addEventListener("click",function(){
+    burgerButton.addEventListener("click", function () {
         burgerButton.classList.toggle("active");
-        if(burgerButton.classList.contains("active")){
+        if (burgerButton.classList.contains("active")) {
             menu.classList.add("active");
 
         }
-        else{
+        else {
             menu.classList.remove("active");
         }
-        
+
     });
-    menuLinks.forEach((menuLink)=>{
-        menuLink.addEventListener("click",function(e){
+    menuLinks.forEach((menuLink) => {
+        menuLink.addEventListener("click", function (e) {
             menu.classList.remove("active");
             burgerButton.classList.remove("active");
         })
@@ -54,7 +54,7 @@ flasks.forEach((flask) => {
                 }
             })
         }
-        else if(flask.classList.contains("active")){
+        else if (flask.classList.contains("active")) {
             flask.classList.remove("active");
             flasks.forEach((flask) => {
                 if (flask.classList.contains("hide")) {
@@ -122,10 +122,16 @@ function scrollMenu(blockId) {
     start = performance.now();
     from = window.pageYOffset || document.documentElement.scrollTop;
     to = document.querySelector(blockId).getBoundingClientRect().top;
-    // if (blockId === "#lab") {
-    //     duration = 1000 * Math.abs(to) / 1000;
-    // } else
-        duration = 1000 * Math.abs(to) / 4000;
+    console.log(document.querySelector(blockId).getBoundingClientRect().top);
+    const { height } = document.querySelector(blockId).getBoundingClientRect();
+
+    if (blockId === "#services") {
+        to = document.querySelector(blockId).getBoundingClientRect().top - document.body.clientHeight + height;
+    }
+    else {
+        to = document.querySelector(blockId).getBoundingClientRect().top;
+    }
+    duration = 1000 * Math.abs(to) / 4000;
 
     // scroll
     requestAnimationFrame(function step(timestamp, e) {
