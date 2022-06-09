@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 :root {
   --base-font: 'Montserrat', sans-serif;
   --base-text-color: #000000;
@@ -276,7 +283,8 @@ body {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   height: 2px;
   width: 100%;
   background: #000;
@@ -309,6 +317,7 @@ body {
   border: none;
   border-radius: 100%;
   -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
   transition: all .3s ease;
   -webkit-animation: pulse 1.6s infinite;
   animation: pulse 1.6s infinite;
@@ -421,6 +430,7 @@ body {
   background-color: var(--purple-color);
   content: "";
   -webkit-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
   transition: width 0.3s ease-out;
 }
 
@@ -440,12 +450,14 @@ body {
   .burger {
     display: block;
     -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
   }
   .burger.active {
     position: fixed;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
     z-index: 300;
     top: 30px;
     right: 30px;
@@ -469,6 +481,7 @@ body {
     width: 280px;
     height: 100%;
     -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
   }
   .menu.active {
@@ -779,8 +792,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -webkit-column-gap: 40px;
-          column-gap: 40px;
+          -moz-column-gap: 40px;
+       column-gap: 40px;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -796,9 +811,11 @@ body {
       -ms-flex-pack: space-betweens;
           justify-content: space-betweens;
   -webkit-transform: translatey(-100%);
-          transform: translatey(-100%);
+          -ms-transform: translatey(-100%);
+      transform: translatey(-100%);
   position: absolute;
   -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
   opacity: 0;
 }
@@ -807,7 +824,8 @@ body {
   opacity: 1;
   top: 200px;
   -webkit-transform: translatey(0);
-          transform: translatey(0);
+          -ms-transform: translatey(0);
+      transform: translatey(0);
 }
 
 .category__title {
@@ -1027,6 +1045,7 @@ body {
 .advertisement__word {
   cursor: pointer;
   -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1117,6 +1136,7 @@ body {
       -ms-flex-order: 1;
           order: 1;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
@@ -1128,6 +1148,7 @@ body {
   position: absolute;
   opacity: 0;
   -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
 }
 
@@ -1136,7 +1157,8 @@ body {
   left: 5%;
   opacity: 1;
   -webkit-transform: translatex(0);
-          transform: translatex(0);
+          -ms-transform: translatex(0);
+      transform: translatex(0);
 }
 
 .flasks__flask-content--light {
@@ -1146,6 +1168,7 @@ body {
   position: absolute;
   opacity: 0;
   -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
 }
 
@@ -1161,6 +1184,7 @@ body {
   position: absolute;
   opacity: 0;
   -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
 }
 
@@ -1176,6 +1200,7 @@ body {
   opacity: 0;
   top: 0;
   -webkit-transition: .8s;
+  -o-transition: .8s;
   transition: .8s;
 }
 
@@ -1205,6 +1230,7 @@ body {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -1222,7 +1248,8 @@ body {
 
 .flasks__flask-container {
   -webkit-column-gap: 56px;
-          column-gap: 56px;
+          -moz-column-gap: 56px;
+       column-gap: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1607,6 +1634,7 @@ body {
   border: 4px solid var(--light-green-color);
   padding-left: 30px;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -1634,6 +1662,14 @@ body {
   font-family: "Montserrat";
 }
 
+.contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+  font-size: 50px;
+  line-height: 114px;
+  color: #ffffff;
+  font-weight: 275;
+  font-family: "Montserrat";
+}
+
 .contacts-form__name::placeholder, .contacts-form__phone::placeholder, .contacts-form__message::placeholder {
   font-size: 50px;
   line-height: 114px;
@@ -1651,6 +1687,10 @@ body {
 }
 
 .contacts-form__name:focus::-ms-input-placeholder, .contacts-form__phone:focus::-ms-input-placeholder, .contacts-form__message:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.contacts-form__name:focus::-moz-placeholder, .contacts-form__phone:focus::-moz-placeholder, .contacts-form__message:focus::-moz-placeholder {
   color: transparent;
 }
 
@@ -1704,7 +1744,8 @@ body {
   }
   .contacts__inner {
     -webkit-column-gap: 40px;
-            column-gap: 40px;
+            -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .contacts__text {
     width: 50%;
@@ -1749,6 +1790,22 @@ body {
     font-size: 36px;
     line-height: 40px;
   }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 36px;
+    line-height: 40px;
+  }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
@@ -1770,7 +1827,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-column-gap: 40px;
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .contacts__text {
     width: 34%;
@@ -1801,6 +1859,22 @@ body {
   .contacts-form__name::-ms-input-placeholder,
   .contacts-form__phone::-ms-input-placeholder,
   .contacts-form__message::-ms-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
     font-size: 28px;
     line-height: 40px;
   }
@@ -1844,6 +1918,22 @@ body {
     font-size: 26px;
     line-height: 32px;
   }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 32px;
+  }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
@@ -1863,7 +1953,8 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-column-gap: 40px;
-            column-gap: 40px;
+            -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .contacts {
     padding-top: 35px;
@@ -1959,6 +2050,22 @@ body {
     font-size: 22px;
     line-height: 40px;
   }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 22px;
+    line-height: 40px;
+  }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
@@ -2019,6 +2126,22 @@ body {
     font-size: 20px;
     line-height: 40px;
   }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 40px;
+  }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
@@ -2043,6 +2166,22 @@ body {
   .contacts-form__name::-ms-input-placeholder,
   .contacts-form__phone::-ms-input-placeholder,
   .contacts-form__message::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
     font-size: 18px;
     line-height: 38px;
   }
@@ -2081,6 +2220,22 @@ body {
     font-size: 16px;
     line-height: 32px;
   }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 32px;
+  }
   .contacts-form__name::placeholder,
   .contacts-form__phone::placeholder,
   .contacts-form__message::placeholder {
@@ -2115,6 +2270,22 @@ body {
   .contacts-form__name::-ms-input-placeholder,
   .contacts-form__phone::-ms-input-placeholder,
   .contacts-form__message::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contacts-form__name::-webkit-input-placeholder, .contacts-form__phone::-webkit-input-placeholder, .contacts-form__message::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contacts-form__name::-moz-placeholder, .contacts-form__phone::-moz-placeholder, .contacts-form__message::-moz-placeholder {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contacts-form__name:-ms-input-placeholder, .contacts-form__phone:-ms-input-placeholder, .contacts-form__message:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contacts-form__name::-ms-input-placeholder, .contacts-form__phone::-ms-input-placeholder, .contacts-form__message::-ms-input-placeholder {
     font-size: 16px;
     line-height: 26px;
   }
@@ -2239,7 +2410,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-column-gap: 80px;
-            column-gap: 80px;
+            -moz-column-gap: 80px;
+         column-gap: 80px;
     row-gap: 40px;
   }
   .footer__organization {
@@ -2295,4 +2467,3 @@ body {
     font-size: 18px;
   }
 }
-/*# sourceMappingURL=style.css.map */

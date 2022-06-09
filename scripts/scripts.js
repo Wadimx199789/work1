@@ -44,56 +44,62 @@ const blocks = document.querySelectorAll(".category__inner");
 const flasks = document.querySelectorAll(".flasks__flask");
 const flasksContent = document.querySelectorAll(".flasks__flask-content");
 
-flasks.forEach((flask) => {
-    flask.addEventListener("click", (e) => {
-        if (!flask.classList.contains("active")) {
-            flask.classList.add("active");
-            flasks.forEach((flask) => {
-                if (!flask.classList.contains("active")) {
-                    flask.classList.add("hide");
-                }
-            })
-        }
-        else if (flask.classList.contains("active")) {
-            flask.classList.remove("active");
-            flasks.forEach((flask) => {
-                if (flask.classList.contains("hide")) {
-                    flask.classList.remove("hide");
-                }
-            })
-        }
-        flasksContent.forEach((flasksContent) => {
-            if (flasksContent.getAttribute("data-flask") === e.target.parentNode.getAttribute("data-flask")) {
-                switch (e.target.parentNode.getAttribute("data-flask")) {
-                    case "light": if (!flasksContent.classList.contains("active")) {
-                        flasksContent.classList.add("active");
-                    }
-                    else {
-                        flasksContent.classList.remove("active");
-                    };
-                        break;
-                    case "business": if (!flasksContent.classList.contains("active")) {
-                        flasksContent.classList.add("active");
-                    }
-                    else {
-                        flasksContent.classList.remove("active");
-                    };
-                        break;
-                    case "creative": if (!flasksContent.classList.contains("active")) {
-                        flasksContent.classList.add("active");
-                    }
-                    else {
-                        flasksContent.classList.remove("active");
-                    };
-                        break;
-
-                }
-
-
+function handleFlasks(flask) {
+    if (!flask.classList.contains("active")) {
+        flask.classList.add("active");
+        flasks.forEach((flask) => {
+            if (!flask.classList.contains("active")) {
+                flask.classList.add("hide");
             }
         })
+    } else if (flask.classList.contains("active")) {
+        flask.classList.remove("active");
+        flasks.forEach((flask) => {
+            if (flask.classList.contains("hide")) {
+                flask.classList.remove("hide");
+            }
+        })
+    }
+}
+
+function handleFlasksContent(e) {
+    flasksContent.forEach((flasksContent) => {
+        const targetElement = [...e.currentTarget.children].find(child => child.attributes.getNamedItem('data-flask')?.name);
+        if (flasksContent.getAttribute("data-flask") === targetElement.getAttribute("data-flask")) {
+            switch (targetElement.getAttribute("data-flask")) {
+                case "light": if (!flasksContent.classList.contains("active")) {
+                    flasksContent.classList.add("active");
+                }
+                else {
+                    flasksContent.classList.remove("active");
+                };
+                    break;
+                case "business": if (!flasksContent.classList.contains("active")) {
+                    flasksContent.classList.add("active");
+                }
+                else {
+                    flasksContent.classList.remove("active");
+                };
+                    break;
+                case "creative": if (!flasksContent.classList.contains("active")) {
+                    flasksContent.classList.add("active");
+                }
+                else {
+                    flasksContent.classList.remove("active");
+                };
+                    break;
+            }
+        }
+    })
+}
+
+flasks.forEach((flask) => {
+    flask.addEventListener("click", (e) => {
+        handleFlasks(flask);
+        handleFlasksContent(e);
     });
-})
+});
+
 words.forEach((word) => {
     word.addEventListener("click", (e) => {
         if (!categoryInner.classList.contains("hide")) {
@@ -112,7 +118,6 @@ words.forEach((word) => {
 
     })
 });
-
 
 // scroll function
 function scrollMenu(blockId) {
